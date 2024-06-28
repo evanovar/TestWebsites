@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Cek Khodam</title>
+        <link rel="stylesheet" href="css/khodamstyle.css">
+    </head>
+    <body background="png/background.jpg">
+        <div class="inputBox">
+            <input type="text" id="nameInput" required="required">
+            <span>Nama Anda</span>
+        </div>
+        <div class="banner">
+            <div class="navbar">
+                <img src="png/logo.png" class="logo">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="khodam.html">Cek Khodam</a></li>
+                    <li><a href="aboutus.html">About us</a></li>
+                </ul>
+            </div>
+            <div class="content">
+                <h1>Check Khodam kamu</h1>
+                <p>Masukkan nama anda, dan lihatlah khodam anda.</p>
+            </div>
+            <script>
+            function checkInput() {
+                const input = document.getElementById('nameInput').value.toUpperCase();
+                if (input.includes('B') || input.includes('C') || input.includes('F') || input.includes('H')) {
+                    window.location.href = 'sigmaKhodam.html'; /* Heheheha */
+                } else if (input.includes('G') || input.includes('J') || input.includes('M')) {
+                    window.location.href = 'ligmaKhodam.html'; /* Spongebob Dissapoint */
+                } else if (input.includes('N') || input.includes('P') || input.includes('R') || input.includes('T')) {
+                    window.location.href = 'mewingKhodam.html'; /* Mewing Bye bye bye */
+                } else if (input.includes('V') || input.includes('W') || input.includes('X') || input.includes('Y')) {
+                    window.location.href = 'gyatKhodam.html'; /* Ballin */
+                } else if (input.includes('Z')) {
+                    window.location.href = 'rajaKhodam.html'; /* MAX VERSTAPPEN */
+                } else {
+                    window.location.href = '0Khodam.html' /* Super Dissapoint */
+                }
+            }
+        </script>
+        <div>
+            <button class="button" onclick="checkInput()"><span></span>Check and Redirect</button>
+        </div>
+    </body>
+</html>
